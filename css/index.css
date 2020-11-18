@@ -1,0 +1,77 @@
+
+:root{
+    --orange : #f18119;
+    --grey-black: #404040;
+    --white : #fff;
+
+    --light-orange: #FFa51D;
+    --dark-orange: #FF713B;
+    --main-font:'Source Sans Pro', sans-serif;
+
+    --h1-font-size : 2.25rem;
+    --h2-font-size : 1.3125rem;
+    --body-font-size: 1rem;
+    --text-font-size: 0.625rem;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* GENERIC STYLE */
+body,html {
+    font-family: var(--main-font);
+    font-size: var(--body-font-size);
+    margin:0;
+    padding: 0;
+    text-align: center;
+}
+
+/* HEADER */
+.header{
+    background: url(/images/ribs.jpg)bottom right no-repeat;
+    display: flex;
+    flex-direction: column;
+    height:50vh;
+    /* align-content: center; */
+    
+}
+.header-sub-title--top {
+    font-size:var(--text-font-size);
+    font-weight: bold;
+    text-transform: uppercase;
+    color:var(--orange);
+    border-top: 5px solid var(--orange);
+    margin: 0 auto;
+}
+
+.header-main-title{
+    font-size: var(--h1-font-size);
+    color:var(--white);
+    font-weight: 100;
+}
+
+.header-sub-title--bottom{
+    color:var(--orange);
+}
+
+#header-hightlight{
+    font-weight: bold;
+}
+
+.header-main-title{
+    margin: 2em auto;
+}
+/* CONTACT-FORM */
+.contact-form *{
+    display: block;
+    margin: 1em auto;
+
+}
+
+@media (min-width:550px){
+    .header{
+        background-size: cover;
+        background-position: center;
+    }
+}
