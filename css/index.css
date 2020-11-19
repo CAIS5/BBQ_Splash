@@ -8,10 +8,10 @@
     --dark-orange: #FF713B;
     --main-font:'Source Sans Pro', sans-serif;
 
-    --h1-font-size : 2.25rem;
-    --h2-font-size : 1.3125rem;
+    --h1-font-size : 2.3rem;
+    --h2-font-size : 1.5rem;
     --body-font-size: 1rem;
-    --text-font-size: 0.625rem;
+    --text-font-size: 0.75rem;
 }
 
 * {
@@ -26,52 +26,80 @@ body,html {
     padding: 0;
     text-align: center;
 }
+h1 {
+    font-size: var(--h1-font-size);
+    font-weight: 300;
+}
 
+h2 {
+    font-size: var(--h2-font-size);
+}
+
+p{
+    font-size: var(--body-font-size);
+}
+strong{
+    font-weight: 900;
+}
 /* HEADER */
 .header{
     background: url(/images/ribs.jpg)bottom right no-repeat;
+    background-size: cover;
     display: flex;
     flex-direction: column;
-    height:50vh;
-    /* align-content: center; */
-    
+    align-content: space-between;
+    padding: 0 1em 1em 1em;
 }
-.header-sub-title--top {
-    font-size:var(--text-font-size);
-    font-weight: bold;
+
+.header > p{
+    color:var(--orange);
     text-transform: uppercase;
-    color:var(--orange);
-    border-top: 5px solid var(--orange);
-    margin: 0 auto;
+    font-weight: 900;
+    margin: 0;
 }
 
-.header-main-title{
-    font-size: var(--h1-font-size);
-    color:var(--white);
-    font-weight: 100;
+.header .main-text{
+    color:white;
+    margin: 3em 0;
 }
 
-.header-sub-title--bottom{
-    color:var(--orange);
+.header .top-text{
+    font-size: var(--text-font-size);
 }
 
-#header-hightlight{
+/* CONTACT-FORM */
+.contact {
+    margin: 2em 1em;
+}
+
+.contact-title
+{
+    margin-bottom: 0;
+}
+
+.contact-title + p {
+    margin-top: 0;
+    margin-bottom: 1.75em;
+    color: var(--dark-orange);
+    text-transform: uppercase;
     font-weight: bold;
 }
 
-.header-main-title{
-    margin: 2em auto;
-}
-/* CONTACT-FORM */
 .contact-form *{
     display: block;
-    margin: 1em auto;
-
+    margin: 1.1em auto;
 }
 
-@media (min-width:550px){
-    .header{
-        background-size: cover;
-        background-position: center;
-    }
+
+.contact-form input,
+.contact-btn{
+    width:200px;
+    height:2.2em;
+    margin-bottom: 0;
+}
+
+.contact-text{
+    font-size: var(--text-font-size);
+    margin: 1em;
+    padding: 0 2.5em;
 }
